@@ -1,0 +1,1 @@
+FINAL tag=v_combo_s2b seed=2 bpb=2.49762 steps=186 tok=380928 tokps=2532 int8_bytes=5207385 int6_est=4195691 secs=150.4
