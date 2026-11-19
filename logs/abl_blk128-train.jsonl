@@ -1,0 +1,21 @@
+{"event": "start", "tag": "abl_blk128", "seed": 1, "config": {"data_dir": "C:\\.cogseed\\userWorkSpace\\\u6211\u7684\u6311\u6218\u6709\u54ea\u4e9b\\.scratch\\c2g_data", "out": "C:\\.cogseed\\userWorkSpace\\\u6211\u7684\u6311\u6218\u6709\u54ea\u4e9b\\.scratch\\runs\\abl_blk128", "vocab": 4096, "n_layer": 4, "n_head": 4, "n_embd": 256, "block": 128, "batch": 8, "mlp_mult": 4.0, "act": "gelu", "norm": "rmsnorm", "tie_weights": 1, "dropout": 0.0, "lr": 0.003, "min_lr_frac": 0.1, "warmup_frac": 0.03, "weight_decay": 0.1, "grad_clip": 1.0, "optimizer": "adamw", "muon_lr": 0.02, "budget_sec": 150.0, "seed": 1, "tag": "abl_blk128", "save_quant": ""}, "n_params": 4196608, "n_params_muon": 3145728, "data": {"corpus": "enwik8", "vocab_size": 4096, "train_bytes": 90000000, "eval_bytes": 2000000, "train_tokens": 31230081, "eval_tokens": 696253, "bytes_per_token_train": 2.8818, "tokenizer": "byte-level BPE (GPT-2 style pre-tokenization)", "note": "NOT FineWeb; not comparable to the official leaderboard BPB."}}
+{"event": "step", "step": 20, "elapsed": 7.74, "loss": 6.96878, "avg_loss_so_far": 7.67632, "lr": 0.002997, "tok_seen": 20480, "tok_per_sec": 2645}
+{"event": "step", "step": 40, "elapsed": 15.7, "loss": 6.80089, "avg_loss_so_far": 7.29684, "lr": 0.002963, "tok_seen": 40960, "tok_per_sec": 2609}
+{"event": "step", "step": 60, "elapsed": 23.52, "loss": 5.85909, "avg_loss_so_far": 6.963, "lr": 0.002892, "tok_seen": 61440, "tok_per_sec": 2613}
+{"event": "step", "step": 80, "elapsed": 31.54, "loss": 6.3015, "avg_loss_so_far": 6.77001, "lr": 0.002783, "tok_seen": 81920, "tok_per_sec": 2597}
+{"event": "step", "step": 100, "elapsed": 39.27, "loss": 5.81911, "avg_loss_so_far": 6.59174, "lr": 0.002644, "tok_seen": 102400, "tok_per_sec": 2607}
+{"event": "step", "step": 120, "elapsed": 46.86, "loss": 5.20515, "avg_loss_so_far": 6.45054, "lr": 0.002483, "tok_seen": 122880, "tok_per_sec": 2622}
+{"event": "step", "step": 140, "elapsed": 54.62, "loss": 5.7223, "avg_loss_so_far": 6.34221, "lr": 0.002293, "tok_seen": 143360, "tok_per_sec": 2625}
+{"event": "step", "step": 160, "elapsed": 62.29, "loss": 5.40748, "avg_loss_so_far": 6.22684, "lr": 0.002089, "tok_seen": 163840, "tok_per_sec": 2630}
+{"event": "step", "step": 180, "elapsed": 70.21, "loss": 5.54989, "avg_loss_so_far": 6.13618, "lr": 0.00187, "tok_seen": 184320, "tok_per_sec": 2625}
+{"event": "step", "step": 200, "elapsed": 78.21, "loss": 4.81353, "avg_loss_so_far": 6.06367, "lr": 0.001634, "tok_seen": 204800, "tok_per_sec": 2618}
+{"event": "step", "step": 220, "elapsed": 86.34, "loss": 5.61557, "avg_loss_so_far": 5.99982, "lr": 0.001398, "tok_seen": 225280, "tok_per_sec": 2609}
+{"event": "step", "step": 240, "elapsed": 94.31, "loss": 5.36603, "avg_loss_so_far": 5.94417, "lr": 0.001175, "tok_seen": 245760, "tok_per_sec": 2606}
+{"event": "step", "step": 260, "elapsed": 102.19, "loss": 4.75935, "avg_loss_so_far": 5.8906, "lr": 0.000968, "tok_seen": 266240, "tok_per_sec": 2605}
+{"event": "step", "step": 280, "elapsed": 110.15, "loss": 5.27761, "avg_loss_so_far": 5.84638, "lr": 0.000779, "tok_seen": 286720, "tok_per_sec": 2603}
+{"event": "step", "step": 300, "elapsed": 117.91, "loss": 5.46487, "avg_loss_so_far": 5.80623, "lr": 0.000619, "tok_seen": 307200, "tok_per_sec": 2605}
+{"event": "step", "step": 320, "elapsed": 125.78, "loss": 5.63722, "avg_loss_so_far": 5.76808, "lr": 0.000486, "tok_seen": 327680, "tok_per_sec": 2605}
+{"event": "step", "step": 340, "elapsed": 133.83, "loss": 5.11655, "avg_loss_so_far": 5.73366, "lr": 0.000386, "tok_seen": 348160, "tok_per_sec": 2601}
+{"event": "step", "step": 360, "elapsed": 141.61, "loss": 4.70454, "avg_loss_so_far": 5.69881, "lr": 0.000324, "tok_seen": 368640, "tok_per_sec": 2603}
+{"event": "step", "step": 380, "elapsed": 149.39, "loss": 5.04804, "avg_loss_so_far": 5.66596, "lr": 0.0003, "tok_seen": 389120, "tok_per_sec": 2605}
+{"event": "final", "tag": "abl_blk128", "seed": 1, "bpb": 2.55148, "train_secs": 150.2, "steps": 382, "tokens_seen": 391168, "tokens_per_sec": 2605, "eval_tokens": 65664, "eval_windows": 513, "eval_bytes": 2000000, "n_params": 4196608, "train_loss": 5.66342, "artifact": {"raw_params": 5245184, "int8_zlib_bytes": 5186893, "int6_est_bytes": 4195691}}

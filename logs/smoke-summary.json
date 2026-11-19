@@ -1,0 +1,20 @@
+{
+  "event": "final",
+  "tag": "smoke",
+  "seed": 1,
+  "bpb": 2.93181,
+  "train_secs": 40.0,
+  "steps": 460,
+  "tokens_seen": 471040,
+  "tokens_per_sec": 11766,
+  "eval_tokens": 65664,
+  "eval_windows": 513,
+  "eval_bytes": 2000000,
+  "n_params": 360768,
+  "train_loss": 6.29931,
+  "artifact": {
+    "raw_params": 622912,
+    "int8_zlib_bytes": 873347,
+    "int6_est_bytes": 728987
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "event": "final",
+  "tag": "b2_base_s3",
+  "seed": 3,
+  "bpb": 2.79685,
+  "train_secs": 90.3,
+  "steps": 128,
+  "tokens_seen": 262144,
+  "tokens_per_sec": 2903,
+  "eval_tokens": 65792,
+  "eval_windows": 257,
+  "eval_bytes": 2000000,
+  "n_params": 4196608,
+  "train_loss": 6.28413,
+  "artifact": {
+    "raw_params": 5245184,
+    "int8_zlib_bytes": 5203963,
+    "int6_est_bytes": 4195691
+  }
+}

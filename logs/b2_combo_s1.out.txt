@@ -1,0 +1,1 @@
+FINAL tag=b2_combo_s1 seed=1 bpb=2.58376 steps=131 tok=268288 tokps=2961 int8_bytes=5212371 int6_est=4195691 secs=90.6

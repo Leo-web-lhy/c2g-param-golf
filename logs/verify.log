@@ -1,0 +1,5 @@
+START 2026-11-19T00:45:27
+v_base_s1 :: 113s :: FINAL tag=v_base_s1 seed=1 bpb=2.82951 steps=119 tok=243712 tokps=2705 int8_bytes=5202661 int6_est=4195691 secs=90.1
+v_base_s2 :: 114s :: FINAL tag=v_base_s2 seed=2 bpb=2.85813 steps=119 tok=243712 tokps=2696 int8_bytes=5206532 int6_est=4195691 secs=90.4
+v_best :: 6s :: 
+DONE 2026-11-19T00:49:19

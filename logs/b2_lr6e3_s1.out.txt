@@ -1,0 +1,1 @@
+FINAL tag=b2_lr6e3_s1 seed=1 bpb=2.64969 steps=132 tok=270336 tokps=2992 int8_bytes=5195067 int6_est=4195691 secs=90.3

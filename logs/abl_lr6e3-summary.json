@@ -1,0 +1,20 @@
+{
+  "event": "final",
+  "tag": "abl_lr6e3",
+  "seed": 1,
+  "bpb": 2.52115,
+  "train_secs": 150.5,
+  "steps": 201,
+  "tokens_seen": 411648,
+  "tokens_per_sec": 2735,
+  "eval_tokens": 65792,
+  "eval_windows": 257,
+  "eval_bytes": 2000000,
+  "n_params": 4196608,
+  "train_loss": 5.66392,
+  "artifact": {
+    "raw_params": 5245184,
+    "int8_zlib_bytes": 5189944,
+    "int6_est_bytes": 4195691
+  }
+}

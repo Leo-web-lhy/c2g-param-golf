@@ -1,0 +1,20 @@
+{
+  "event": "final",
+  "tag": "abl_blk128",
+  "seed": 1,
+  "bpb": 2.55148,
+  "train_secs": 150.2,
+  "steps": 382,
+  "tokens_seen": 391168,
+  "tokens_per_sec": 2605,
+  "eval_tokens": 65664,
+  "eval_windows": 513,
+  "eval_bytes": 2000000,
+  "n_params": 4196608,
+  "train_loss": 5.66342,
+  "artifact": {
+    "raw_params": 5245184,
+    "int8_zlib_bytes": 5186893,
+    "int6_est_bytes": 4195691
+  }
+}

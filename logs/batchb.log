@@ -1,0 +1,11 @@
+START 2026-11-19T00:22:01
+b2_base_s1 :: 455s :: FINAL tag=b2_base_s1 seed=1 bpb=3.62677 steps=11 tok=22528 tokps=235 int8_bytes=5186513 int6_est=4195691 secs=95.5
+b2_base_s2 :: 133s :: FINAL tag=b2_base_s2 seed=2 bpb=3.35822 steps=51 tok=104448 tokps=1160 int8_bytes=5198434 int6_est=4195691 secs=90.0
+b2_base_s3 :: 113s :: FINAL tag=b2_base_s3 seed=3 bpb=2.79685 steps=128 tok=262144 tokps=2902 int8_bytes=5203963 int6_est=4195691 secs=90.3
+b2_lr6e3_s1 :: 113s :: FINAL tag=b2_lr6e3_s1 seed=1 bpb=2.64969 steps=132 tok=270336 tokps=2992 int8_bytes=5195067 int6_est=4195691 secs=90.3
+b2_lr6e3_s2 :: 113s :: FINAL tag=b2_lr6e3_s2 seed=2 bpb=2.65308 steps=132 tok=270336 tokps=2985 int8_bytes=5199208 int6_est=4195691 secs=90.5
+b2_lr6e3_s3 :: 113s :: FINAL tag=b2_lr6e3_s3 seed=3 bpb=2.64432 steps=131 tok=268288 tokps=2973 int8_bytes=5197070 int6_est=4195691 secs=90.2
+b2_untied_s2 :: 112s :: FINAL tag=b2_untied_s2 seed=2 bpb=2.71553 steps=135 tok=276480 tokps=3064 int8_bytes=5203238 int6_est=4195691 secs=90.2
+b2_untied_s3 :: 112s :: FINAL tag=b2_untied_s3 seed=3 bpb=2.69067 steps=130 tok=266240 tokps=2940 int8_bytes=5204363 int6_est=4195691 secs=90.5
+b2_combo_s1 :: 113s :: FINAL tag=b2_combo_s1 seed=1 bpb=2.58376 steps=131 tok=268288 tokps=2961 int8_bytes=5212371 int6_est=4195691 secs=90.6
+DONE 2026-11-19T00:45:00

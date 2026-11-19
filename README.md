@@ -1,2 +1,59 @@
-# c2g-param-golf
-C2G Parameter Golf - LM training under 16MB artifact / 10min budget (CPU reproducible)
+# C2G 参数高尔夫：极限约束下的语言模型训练
+
+**公开仓库**：https://github.com/Leo-web-lhy/c2g-param-golf
+**提交身份**：2023108610260　**挑战**：ch-20260717031359-b8wyg0
+
+本仓库是 C2G 的全量交付物：可训练代码、91 份真实运行日志（含失败与作废点）、单因子与多因子对照实验、16MB 预算的实测字节账，以及复盘。
+
+---
+
+## 1. 结论先行
+
+在本机 **CPU only**（torch 2.15.0+cpu，14 线程）条件下，用 4 层 / 4 头 / 256 维小模型、enwik8 的 byte-BPE 4096 词表、**以 wallclock 秒数为预算**，跑通了参数高尔夫的核心权衡，并拿到两个稳定结论：
+
+| 项目 | 数值 |
+|---|---|
+| 同预算基线 BPB（150s） | 2.63159 |
+| 最佳组合 `--lr 6e-3 --tie-weights 0` | **2.47777**（−0.1538，−5.8%） |
+| artifact 实测总字节 | **5,006,807**（16,000,000 预算内，fits=true） |
+| 权重 int8+zlib | 4,946,750 |
+
+三条可复用的调参事实：
+
+1. **学习率是唯一量级级别的旋钮。** 1e-3 → 3e-3 → 6e-3 单调改善（2.967 → 2.632 → 2.521）。默认 3e-3 在"150 秒预算卡住步数"的尺度上偏保守——模型只走 200 步，lr 必须更激进。
+2. **权重解绑（untied）单独 −0.0811**，是第二有效的单因子改动。
+3. **Muon 与 SwiGLU 在本尺度为负收益**：Muon 单步更贵（149 步 vs 197 步），固定 wallclock 下亏掉的步数抵消了优化质量；SwiGLU 参数多 19% 而 BPB 差 0.42。这是"等时间预算"下的必然结果，不能反推它们在别的尺度无效。
+
+种子稳定性：`lr 6e-3` 三种子极差仅 0.0088（SD≈0.004），而基线自身种子 SD≈0.031，改善幅度约为其 6 倍，**不是噪声**。
+
+## 2. 目录
+
+```
+train_gpt.py                 训练器（17.8KB，含 int8 量化落盘与字节账）
+2023108610260_C2G_train_gpt.py  同一训练器的提交命名副本
+prep_data.py                 数据制备（enwik8 → byte-BPE 4096）
+方案草案.md / 方案设计.md      策略集、预算分配、可解释调参方法论
+消融结果.md                   全部对照实验结果与"这些数字不能证明什么"
+AI日志.md / AAR.md            协作过程与复盘
+logs/                        91 份真实运行日志（summary.json + train.jsonl + stdout/stderr）
+c2g_submission.tar.gz        打包提交物
+```
+
+## 3. 复现
+
+```bash
+python prep_data.py --out ./c2g_data
+python train_gpt.py --data-dir ./c2g_data --out ./runs/v_best \
+  --vocab 4096 --n-layer 4 --n-head 4 --n-embd 256 \
+  --block 256 --batch 8 --budget-sec 150 \
+  --lr 6e-3 --tie-weights 0 --seed 1 --tag v_best --save-quant
+```
+
+`--budget-sec` 是 wallclock 秒数预算，不是步数；换机器后步数会不同，这是本方案的设计前提。
+
+## 4. 必须如实说明的边界
+
+- 所有 BPB 都是**本机 CPU 小模型的绝对数值**，与本挑战 H100 榜面（baseline 1.2244 / leader 1.0810）**不可比**，只在同机同预算内做相对比较。
+- 不能证明在 8×H100 上同样有效：lr 最优值强烈依赖步数与 batch 乘积，H100 上 600 秒可走数千步，6e-3 很可能过大。
+- `logs/b2_base_s1`、`logs/b2_base_s2` 是**已作废**的两点：机器负载把吞吐压到正常的 1/10（235 / 1160 tok/s），BPB 虚高到 3.63 / 3.36。判废依据是吞吐而非结果好坏，重跑由 `v_base_s1` / `v_base_s2` 替代。
+- int6 的 4,195,691 字节是按位宽**推算**的估算值，不是真实文件；可审计路径只有 int8+zlib 这条。

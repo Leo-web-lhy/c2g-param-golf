@@ -1,0 +1,20 @@
+{
+  "event": "final",
+  "tag": "abl_untied",
+  "seed": 1,
+  "bpb": 2.55045,
+  "train_secs": 150.1,
+  "steps": 192,
+  "tokens_seen": 393216,
+  "tokens_per_sec": 2620,
+  "eval_tokens": 65792,
+  "eval_windows": 257,
+  "eval_bytes": 2000000,
+  "n_params": 5245184,
+  "train_loss": 5.77068,
+  "artifact": {
+    "raw_params": 5245184,
+    "int8_zlib_bytes": 5198465,
+    "int6_est_bytes": 4195691
+  }
+}

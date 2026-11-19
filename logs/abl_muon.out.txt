@@ -1,0 +1,1 @@
+FINAL tag=abl_muon seed=1 bpb=2.62574 steps=149 tok=305152 tokps=2031 int8_bytes=5207341 int6_est=4195691 secs=150.2

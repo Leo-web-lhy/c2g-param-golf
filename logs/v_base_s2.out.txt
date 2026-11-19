@@ -1,0 +1,1 @@
+FINAL tag=v_base_s2 seed=2 bpb=2.85813 steps=119 tok=243712 tokps=2696 int8_bytes=5206532 int6_est=4195691 secs=90.4

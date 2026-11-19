@@ -1,0 +1,1 @@
+FINAL tag=abl_swiglu seed=1 bpb=3.04932 steps=167 tok=342016 tokps=2269 int8_bytes=6184387 int6_est=4982123 secs=150.7

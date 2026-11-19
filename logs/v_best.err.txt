@@ -1,0 +1,11 @@
+usage: train_gpt.py [-h] --data-dir DATA_DIR --out OUT [--vocab VOCAB]
+                    [--n-layer N_LAYER] [--n-head N_HEAD] [--n-embd N_EMBD]
+                    [--block BLOCK] [--batch BATCH] [--mlp-mult MLP_MULT]
+                    [--act {gelu,swiglu}] [--norm {rmsnorm,layernorm}]
+                    [--tie-weights TIE_WEIGHTS] [--dropout DROPOUT] [--lr LR]
+                    [--min-lr-frac MIN_LR_FRAC] [--warmup-frac WARMUP_FRAC]
+                    [--weight-decay WEIGHT_DECAY] [--grad-clip GRAD_CLIP]
+                    [--optimizer {adamw,muon}] [--muon-lr MUON_LR]
+                    [--budget-sec BUDGET_SEC] [--seed SEED] [--tag TAG]
+                    [--save-quant SAVE_QUANT]
+train_gpt.py: error: argument --save-quant: expected one argument

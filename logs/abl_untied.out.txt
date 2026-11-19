@@ -1,0 +1,1 @@
+FINAL tag=abl_untied seed=1 bpb=2.55045 steps=192 tok=393216 tokps=2619 int8_bytes=5198465 int6_est=4195691 secs=150.1

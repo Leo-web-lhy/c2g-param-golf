@@ -1,0 +1,1 @@
+FINAL tag=abl_d6w192 seed=1 bpb=2.61818 steps=229 tok=468992 tokps=3113 int8_bytes=4270128 int6_est=3433979 secs=150.6

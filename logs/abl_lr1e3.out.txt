@@ -1,0 +1,1 @@
+FINAL tag=abl_lr1e3 seed=1 bpb=2.96745 steps=198 tok=405504 tokps=2700 int8_bytes=5199714 int6_est=4195691 secs=150.1

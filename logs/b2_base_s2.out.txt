@@ -1,0 +1,1 @@
+FINAL tag=b2_base_s2 seed=2 bpb=3.35822 steps=51 tok=104448 tokps=1160 int8_bytes=5198434 int6_est=4195691 secs=90.0

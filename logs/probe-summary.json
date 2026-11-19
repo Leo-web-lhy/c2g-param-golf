@@ -1,0 +1,20 @@
+{
+  "event": "final",
+  "tag": "probe",
+  "seed": 1,
+  "bpb": 2.82472,
+  "train_secs": 90.5,
+  "steps": 121,
+  "tokens_seen": 247808,
+  "tokens_per_sec": 2739,
+  "eval_tokens": 65792,
+  "eval_windows": 257,
+  "eval_bytes": 2000000,
+  "n_params": 4196608,
+  "train_loss": 6.25187,
+  "artifact": {
+    "raw_params": 5245184,
+    "int8_zlib_bytes": 5202374,
+    "int6_est_bytes": 4195691
+  }
+}

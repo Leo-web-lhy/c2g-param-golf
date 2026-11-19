@@ -1,0 +1,25 @@
+{"event": "start", "tag": "smoke", "seed": 1, "config": {"data_dir": "C:\\.cogseed\\userWorkSpace\\\u6211\u7684\u6311\u6218\u6709\u54ea\u4e9b\\.scratch\\c2g_data", "out": "C:\\.cogseed\\userWorkSpace\\\u6211\u7684\u6311\u6218\u6709\u54ea\u4e9b\\.scratch\\runs\\smoke", "vocab": 4096, "n_layer": 2, "n_head": 2, "n_embd": 64, "block": 128, "batch": 8, "mlp_mult": 4.0, "act": "gelu", "norm": "rmsnorm", "tie_weights": 1, "dropout": 0.0, "lr": 0.003, "min_lr_frac": 0.1, "warmup_frac": 0.03, "weight_decay": 0.1, "grad_clip": 1.0, "optimizer": "adamw", "muon_lr": 0.02, "budget_sec": 40.0, "seed": 1, "tag": "smoke"}, "n_params": 360768, "n_params_muon": 98304, "data": {"corpus": "enwik8", "vocab_size": 4096, "train_bytes": 90000000, "eval_bytes": 2000000, "train_tokens": 31230081, "eval_tokens": 696253, "bytes_per_token_train": 2.8818, "tokenizer": "byte-level BPE (GPT-2 style pre-tokenization)", "note": "NOT FineWeb; not comparable to the official leaderboard BPB."}}
+{"event": "step", "step": 20, "elapsed": 1.81, "loss": 7.84728, "avg_loss_so_far": 8.17626, "lr": 0.002999, "tok_seen": 20480, "tok_per_sec": 11315}
+{"event": "step", "step": 40, "elapsed": 3.56, "loss": 7.34563, "avg_loss_so_far": 7.84476, "lr": 0.002977, "tok_seen": 40960, "tok_per_sec": 11516}
+{"event": "step", "step": 60, "elapsed": 5.33, "loss": 6.63852, "avg_loss_so_far": 7.55121, "lr": 0.002928, "tok_seen": 61440, "tok_per_sec": 11517}
+{"event": "step", "step": 80, "elapsed": 7.06, "loss": 6.84986, "avg_loss_so_far": 7.35498, "lr": 0.002856, "tok_seen": 81920, "tok_per_sec": 11610}
+{"event": "step", "step": 100, "elapsed": 8.79, "loss": 6.41679, "avg_loss_so_far": 7.18908, "lr": 0.002759, "tok_seen": 102400, "tok_per_sec": 11643}
+{"event": "step", "step": 120, "elapsed": 10.5, "loss": 5.99339, "avg_loss_so_far": 7.0542, "lr": 0.00264, "tok_seen": 122880, "tok_per_sec": 11698}
+{"event": "step", "step": 140, "elapsed": 12.31, "loss": 6.36286, "avg_loss_so_far": 6.95465, "lr": 0.002498, "tok_seen": 143360, "tok_per_sec": 11645}
+{"event": "step", "step": 160, "elapsed": 14.09, "loss": 6.09691, "avg_loss_so_far": 6.85528, "lr": 0.002338, "tok_seen": 163840, "tok_per_sec": 11627}
+{"event": "step", "step": 180, "elapsed": 15.79, "loss": 6.34692, "avg_loss_so_far": 6.77625, "lr": 0.002172, "tok_seen": 184320, "tok_per_sec": 11676}
+{"event": "step", "step": 200, "elapsed": 17.48, "loss": 5.67618, "avg_loss_so_far": 6.71569, "lr": 0.001995, "tok_seen": 204800, "tok_per_sec": 11714}
+{"event": "step", "step": 220, "elapsed": 19.17, "loss": 6.30255, "avg_loss_so_far": 6.66233, "lr": 0.001817, "tok_seen": 225280, "tok_per_sec": 11753}
+{"event": "step", "step": 240, "elapsed": 20.83, "loss": 6.17714, "avg_loss_so_far": 6.61508, "lr": 0.001633, "tok_seen": 245760, "tok_per_sec": 11796}
+{"event": "step", "step": 260, "elapsed": 22.54, "loss": 5.60386, "avg_loss_so_far": 6.57005, "lr": 0.001447, "tok_seen": 266240, "tok_per_sec": 11813}
+{"event": "step", "step": 280, "elapsed": 24.29, "loss": 6.09493, "avg_loss_so_far": 6.53216, "lr": 0.001262, "tok_seen": 286720, "tok_per_sec": 11803}
+{"event": "step", "step": 300, "elapsed": 26.07, "loss": 6.28443, "avg_loss_so_far": 6.49774, "lr": 0.00108, "tok_seen": 307200, "tok_per_sec": 11786}
+{"event": "step", "step": 320, "elapsed": 27.76, "loss": 6.36063, "avg_loss_so_far": 6.46543, "lr": 0.000917, "tok_seen": 327680, "tok_per_sec": 11803}
+{"event": "step", "step": 340, "elapsed": 29.54, "loss": 5.88073, "avg_loss_so_far": 6.43688, "lr": 0.000763, "tok_seen": 348160, "tok_per_sec": 11786}
+{"event": "step", "step": 360, "elapsed": 31.32, "loss": 5.58258, "avg_loss_so_far": 6.40717, "lr": 0.000625, "tok_seen": 368640, "tok_per_sec": 11770}
+{"event": "step", "step": 380, "elapsed": 33.09, "loss": 5.85936, "avg_loss_so_far": 6.37927, "lr": 0.000511, "tok_seen": 389120, "tok_per_sec": 11760}
+{"event": "step", "step": 400, "elapsed": 34.84, "loss": 5.48554, "avg_loss_so_far": 6.35294, "lr": 0.00042, "tok_seen": 409600, "tok_per_sec": 11755}
+{"event": "step", "step": 420, "elapsed": 36.58, "loss": 5.74533, "avg_loss_so_far": 6.33793, "lr": 0.000354, "tok_seen": 430080, "tok_per_sec": 11757}
+{"event": "step", "step": 440, "elapsed": 38.32, "loss": 5.61366, "avg_loss_so_far": 6.31726, "lr": 0.000314, "tok_seen": 450560, "tok_per_sec": 11758}
+{"event": "step", "step": 460, "elapsed": 40.03, "loss": 6.03722, "avg_loss_so_far": 6.29931, "lr": 0.0003, "tok_seen": 471040, "tok_per_sec": 11766}
+{"event": "final", "tag": "smoke", "seed": 1, "bpb": 2.93181, "train_secs": 40.0, "steps": 460, "tokens_seen": 471040, "tokens_per_sec": 11766, "eval_tokens": 65664, "eval_windows": 513, "eval_bytes": 2000000, "n_params": 360768, "train_loss": 6.29931, "artifact": {"raw_params": 622912, "int8_zlib_bytes": 873347, "int6_est_bytes": 728987}}

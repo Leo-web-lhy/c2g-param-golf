@@ -1,0 +1,1 @@
+FINAL tag=b2_untied_s3 seed=3 bpb=2.69067 steps=130 tok=266240 tokps=2940 int8_bytes=5204363 int6_est=4195691 secs=90.5
